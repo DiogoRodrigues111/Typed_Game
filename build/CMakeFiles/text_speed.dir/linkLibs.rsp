@@ -1,0 +1,1 @@
+  -L"C:/Libraries/CXX/SDL2-2.30.11/lib/x64"  -LC:/Devel/CCXX/text_to_speed/text_speed/,  -L"C:/Libraries/CXX/SDL2_ttf-2.24.0/lib/x64"  -lSDL2 -lSDL2main -lopengl32 -lSDL2_ttf -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

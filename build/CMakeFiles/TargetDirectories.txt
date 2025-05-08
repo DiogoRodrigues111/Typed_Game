@@ -1,0 +1,3 @@
+C:/Devel/CCXX/text_to_speed/text_speed/build/CMakeFiles/text_speed.dir
+C:/Devel/CCXX/text_to_speed/text_speed/build/CMakeFiles/edit_cache.dir
+C:/Devel/CCXX/text_to_speed/text_speed/build/CMakeFiles/rebuild_cache.dir

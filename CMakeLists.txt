@@ -16,8 +16,7 @@ link_directories(
     "${SDL2_PATH}/lib/x64",
     "${SDL2_TTF_PATH}/lib/x64")
 
-add_executable(text_speed main.cpp
-    Recycle2.txt)
+add_executable(text_speed main.cpp)
 
 target_link_libraries(text_speed
     PRIVATE

@@ -1,0 +1,32 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Devel/CCXX/text_to_speed/text_speed/build",
+	"dir-cur-src" : "C:/Devel/CCXX/text_to_speed/text_speed",
+	"dir-top-bld" : "C:/Devel/CCXX/text_to_speed/text_speed/build",
+	"dir-top-src" : "C:/Devel/CCXX/text_to_speed/text_speed",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Libraries\\CXX\\SDL2-2.30.11\\include",
+		"C:\\Devel\\CCXX\\text_to_speed\\text_speed\\,",
+		"C:\\Libraries\\CXX\\SDL2_ttf-2.24.0\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Devel/CCXX/text_to_speed/text_speed/build/CMakeFiles/text_speed.dir",
+	"sources" : 
+	{
+		"CMakeFiles/text_speed.dir/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Devel/CCXX/text_to_speed/text_speed/main.cpp"
+		}
+	}
+}

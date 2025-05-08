@@ -1,11 +1,13 @@
 #define SDL_MAIN_HANDLED
 #include <SDL.h>
 #include <SDL_ttf.h>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+#include <fstream>
 
 struct Word {
     std::string text;
@@ -20,6 +22,16 @@ SDL_Window* window = nullptr;
 SDL_Renderer* renderer = nullptr;
 TTF_Font* font = nullptr;
 
+std::string WORD_PATH = "../arch/english_words_master/words.txt";
+
+std::ifstream _if(WORD_PATH);
+
+int life = 8;
+
+void game_over() {
+    renderText("Game Over", 0, 0, {255, 255, 0});
+}
+
 bool init() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) return false;
     if (TTF_Init() == -1) return false;
@@ -31,7 +43,7 @@ bool init() {
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if (!renderer) return false;
 
-    font = TTF_OpenFont("../../arial/ARIAL.TTF", 24);  // Substitua com o caminho da fonte
+    font = TTF_OpenFont("../arial/ARIAL.TTF", 24);  // Substitua com o caminho da fonte
     if (!font) return false;
 
     return true;
@@ -49,7 +61,8 @@ void renderText(const std::string& text, int x, int y, SDL_Color color) {
 int main(int argc, char* argv[]) {
     if (!init()) return -1;
 
-    std::vector<std::string> wordList = {"rust", "cargo", "trait", "thread", "vector", "sdl", "string"};
+    std::string msg_life_gameover = "Game Over";
+    //std::vector<std::string> wordList = {"rust", "cargo", "trait", "thread", "vector", "sdl", "string"};
     std::vector<Word> activeWords;
     std::string input;
     int score = 0;
@@ -59,6 +72,8 @@ int main(int argc, char* argv[]) {
     srand((unsigned int)time(nullptr));
     bool running = true;
     SDL_Event e;
+
+    std::vector<std::string> wordList = {};
 
     while (running) {
         Uint32 currentTime = SDL_GetTicks();
@@ -87,6 +102,18 @@ int main(int argc, char* argv[]) {
 
         if (spawnTimer >= 2.0f) {
             spawnTimer = 0.0f;
+
+            std::string getLine;
+
+            if (!_if.is_open()) {
+                std::cout << "Failed to load the file. \n";
+            }
+            else {
+                while (std::getline(_if, getLine)) {
+                    wordList.push_back(getLine);
+                }
+            }
+
             std::string newWord = wordList[rand() % wordList.size()];
             Word w = {newWord, (float)SCREEN_WIDTH, (float)(rand() % (SCREEN_HEIGHT - 50) + 25), 100.0f};
             activeWords.push_back(w);
@@ -112,6 +139,7 @@ int main(int argc, char* argv[]) {
         SDL_Delay(16);
     }
 
+    _if.close();
     TTF_CloseFont(font);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);

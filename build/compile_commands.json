@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Devel/CCXX/text_to_speed/text_speed/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\clang++.exe  @CMakeFiles/text_speed.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\text_speed.dir\\main.cpp.obj -c C:\\Devel\\CCXX\\text_to_speed\\text_speed\\main.cpp",
+  "file": "C:/Devel/CCXX/text_to_speed/text_speed/main.cpp",
+  "output": "CMakeFiles/text_speed.dir/main.cpp.obj"
+}
+]

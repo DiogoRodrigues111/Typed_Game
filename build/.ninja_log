@@ -1,0 +1,7 @@
+# ninja log v6
+9	2903	7684434107856945	CMakeFiles/text_speed.dir/main.cpp.obj.ddi	636fe1c544d7381b
+2905	3002	7684434137666933	CMakeFiles/text_speed.dir/CXX.dd	cc778143a4e00019
+2905	3002	7684434137666933	C:/Devel/CCXX/text_to_speed/text_speed/build/CMakeFiles/text_speed.dir/CXXModules.json	cc778143a4e00019
+2905	3002	7684434137666933	CMakeFiles/text_speed.dir/main.cpp.obj.modmap	cc778143a4e00019
+3015	7124	7684434137916908	CMakeFiles/text_speed.dir/main.cpp.obj	77725ff4d9362abd
+7135	7522	7684434179123883	text_speed.exe	2e4726b1ffcc8312
