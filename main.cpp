@@ -26,11 +26,8 @@ std::string WORD_PATH = "../arch/english_words_master/words.txt";
 
 std::ifstream _if(WORD_PATH);
 
-int life = 8;
-
-void game_over() {
-    renderText("Game Over", 0, 0, {255, 255, 0});
-}
+const int life = 8;
+std::string msg_game_over = "Game Over";
 
 bool init() {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) return false;
@@ -56,6 +53,10 @@ void renderText(const std::string& text, int x, int y, SDL_Color color) {
     SDL_FreeSurface(surface);
     SDL_RenderCopy(renderer, texture, nullptr, &dest);
     SDL_DestroyTexture(texture);
+}
+
+void game_over() {
+    renderText(msg_game_over, 0, 0, {255, 255, 0});
 }
 
 int main(int argc, char* argv[]) {
@@ -123,6 +124,11 @@ int main(int argc, char* argv[]) {
         activeWords.erase(std::remove_if(activeWords.begin(), activeWords.end(),
                                          [](const Word& w) { return w.x + w.text.size() * 12 < 0; }),
                           activeWords.end());
+
+        auto& remove_life = activeWords.erase(std::remove_if(activeWords.begin(), activeWords.end(),
+                                         [](const Word& w) { return w.x + w.text.size() * 12 < 0; }),
+                          activeWords.end());
+        if (remove_life.base()) {}
 
         // Renderização
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);

@@ -102,6 +102,10 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "-LC:\\Libraries\\CXX\\SDL2-2.30.11\\lib\\x64",
 				"role" : "libraryPath"

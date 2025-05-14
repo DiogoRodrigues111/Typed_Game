@@ -8,34 +8,34 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/msys64/ucrt64/bin/cmake.exe",
-			"cpack" : "C:/msys64/ucrt64/bin/cpack.exe",
-			"ctest" : "C:/msys64/ucrt64/bin/ctest.exe",
-			"root" : "C:/msys64/ucrt64/share/cmake"
+			"cmake" : "C:/ST/STM32CubeCLT_1.18.0/CMake/bin/cmake.exe",
+			"cpack" : "C:/ST/STM32CubeCLT_1.18.0/CMake/bin/cpack.exe",
+			"ctest" : "C:/ST/STM32CubeCLT_1.18.0/CMake/bin/ctest.exe",
+			"root" : "C:/ST/STM32CubeCLT_1.18.0/CMake/share/cmake-3.28"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
-			"major" : 4,
-			"minor" : 0,
+			"major" : 3,
+			"minor" : 28,
 			"patch" : 1,
-			"string" : "4.0.1",
+			"string" : "3.28.1",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-a57ed6dde62286794bd4.json",
+			"jsonFile" : "codemodel-v2-bd011a3d14fcb8bfe528.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 8
+				"minor" : 6
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-a8b1d77e3be0aa9d9421.json",
+			"jsonFile" : "cache-v2-75504f303d573e8fd9e1.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,12 +44,12 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-57fb7184448b466e5517.json",
+			"jsonFile" : "cmakeFiles-v1-a6e018a433ce200094b7.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 1
+				"minor" : 0
 			}
 		},
 		{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-a8b1d77e3be0aa9d9421.json",
+						"jsonFile" : "cache-v2-75504f303d573e8fd9e1.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,12 +99,12 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-a57ed6dde62286794bd4.json",
+						"jsonFile" : "codemodel-v2-bd011a3d14fcb8bfe528.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 8
+							"minor" : 6
 						}
 					},
 					{
@@ -117,12 +117,12 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-57fb7184448b466e5517.json",
+						"jsonFile" : "cmakeFiles-v1-a6e018a433ce200094b7.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
 							"major" : 1,
-							"minor" : 1
+							"minor" : 0
 						}
 					}
 				]

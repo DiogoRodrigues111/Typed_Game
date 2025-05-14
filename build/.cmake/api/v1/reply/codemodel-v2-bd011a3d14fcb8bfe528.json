@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "text_speed::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-text_speed-Debug-9c915676e74dcedaaae8.json",
+					"jsonFile" : "target-text_speed-Debug-b114cf4b85d155662aef.json",
 					"name" : "text_speed",
 					"projectIndex" : 0
 				}
@@ -55,6 +55,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 8
+		"minor" : 6
 	}
 }
